@@ -1,4 +1,4 @@
-
+```css
 * {
     box-sizing: border-box;
 }
@@ -135,8 +135,211 @@ section h3 {
 }
 
 .works h3 {
-    c
+    color: #172235;
+}
+
+.works-intro {
+    color: #596579;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Works Controls
+========================= */
+
+.works-controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.works-controls select {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #172235;
+    background: #ffffff;
+    border: 1px solid #cbd4df;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.works-controls select:hover {
+    border-color: #159ac2;
+}
+
+
+/* =========================
+   Works Grid
+========================= */
+
+#works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================
+   Work Card
+========================= */
+
+.work-card {
+    overflow: hidden;
+    border: 1px solid #d7dee7;
+    background: #ffffff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+    border-color: #62d9ff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* 作品画像 */
+
+.work-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* 作品情報 */
+
+.works-info {
+    padding: 20px;
+}
+
+.work-category {
+    margin: 0 0 8px;
+    color: #159ac2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.work-card h4 {
+    margin: 0 0 12px;
+    color: #172235;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.work-card p {
+    margin: 0 0 12px;
+    color: #596579;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.work-year {
+    margin-top: 15px !important;
+    color: #8a96a6 !important;
+    font-size: 12px !important;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 30px 10%;
+    background: #0d1726;
+    color: #718196;
+    font-size: 12px;
+    border-top: 1px solid #26364a;
+}
+
+
+/* =========================
+   スマートフォン
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 0 6%;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    #works-grid{
+        grid-template-columns: 1fr;
+
+    }
+    .works-controls{
+        flex-direction:column;
+    }
+
+
+    /* Top */
+
+    .top {
+        padding-top: 80px 8%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .top img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .top h1 {
+        font-size: 45px;
+    }
+
+
+    /* Section */
+
+    section {
+        padding: 70px 8%;
+    }
+
+
+    /* About */
+
+    .about-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /* Works */
+
+    #works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .works-controls select {
+        width: 100%;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 25px 8%;
+    }
+
+}
 ```
+
 
 
 
